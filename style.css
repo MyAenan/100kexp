@@ -1,0 +1,152 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+	/* background-color: #f1f1f1; */
+}
+
+#infobox {
+	padding:25px 0px;
+	margin-bottom:20px;
+    background-color:#222;
+	color:#E4E4E4;
+}
+#mainpage {
+    min-height: 90%;
+}
+
+#aside, #bside {
+    float: left;
+    box-sizing: border-box;
+    max-height: 100%;
+    overflow-x: scroll;
+}
+
+#aside {
+    width: 34%;
+	position:fixed;
+	/* background-color: #222; */
+    height: 100%;
+}
+
+#nav{
+	/* padding-top:13%; */
+	background-color:#222;
+	color:#FFF;
+	padding:3px 0 1px 0;
+    height:14%;
+}
+
+#howlink {
+	color:#FFF; 
+	background-color:#222; 
+	font-size:11px; 
+	text-decoration:none; 
+	padding:3px 0; 
+	cursor:pointer; 
+	display:block; 
+	width:56%; 
+	border-bottom-left-radius:20px; 
+	border-bottom-right-radius:20px;
+}
+
+#returncalcu {
+	color:#FFF; 
+	background-color:#222; 
+	font-size:11px; 
+	text-decoration:none; 
+	padding:3px 0; 
+	cursor: pointer; 
+	display:none; 
+	width:56%; 
+	border-bottom-left-radius:20px; 
+	border-bottom-right-radius:20px;
+}
+
+#bside {
+    border-left: 1px solid #222;
+    text-align: center;
+	margin-left: 34%;
+	background-color: #FFF;
+	height:auto;
+}
+
+#bside .battler {
+    font-size: 13px;
+    line-height: 15px;
+    width: 150px;
+    height: 80px;
+    margin: 0.9%;
+    text-align: center;
+    display: inline-block;
+    /*background-color: #FFFFFF;*/
+	border-radius: 7px;	
+
+}
+#bside .battler b {
+	width: auto;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	word-break: break-all;
+	white-space:normal;
+}
+
+#bside .battler small {
+    font-size: 10px;
+    line-height: 22px;
+	white-space: pre-line;
+}
+
+#entryform {
+    text-align: center;
+    margin: 5px auto 20px;
+    height: 70px;
+	padding-top:20px;
+}
+
+#entryform > .form-group {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    display: block;
+}
+
+#entryform > .form-group > label, #entryform > .form-group > input {
+    display: block;
+    margin: 0 auto;
+}
+
+#targetbox {
+    clear: both;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#battletable {
+    clear: both;
+}
+
+#battletable .close {
+    color: #000;
+    text-align: center;
+    float: none;
+}
+
+.bg-trainers { background-color: #FFF3E0; }
+.bg-gym { background-color:#D3FCFE; }
+.bg-wild { background-color: #CEFFC6 }
+
+
+@media screen and (max-width: 700px) {
+  .navbar{
+	  width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #aside {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #aside a {}
+  #bside {margin-left: 0;}
+}
