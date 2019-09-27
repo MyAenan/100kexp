@@ -86,8 +86,7 @@ $(document).ready(function() {
 		}
 	});
 	//$('#entryform input:first-of-type').trigger('change');
-	
-	$('[data-toggle="tooltip"]').tooltip();   
+	 
 	
     //how to use
 	$(document).on('click', "#howlink", function(e) {
