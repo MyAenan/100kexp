@@ -1,119 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="Fan Made Exp Calculator for DelugeRPG">
-	<meta name="keywords" content="delugerpg, exp calculator, delugerpg exp, exact exp delugerpg, aenan calculator, aenan, magikarp calculator, nancy, nancy mcdonie">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Aenan's 100k Exp Calculator for DelugeRPG</title>
-	<link rel="shortcut icon" href="images/aenan.ico" />
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
-	<link href="style.css?v=2" rel="stylesheet" media="screen">
+    <meta charset="utf-8">
+    <meta content="Fan Made Exp Calculator for DelugeRPG" name="description">
+    <meta content="delugerpg, exp calculator, delugerpg exp, exact exp delugerpg, aenan calculator, aenan, magikarp calculator, nancy, nancy mcdonie" name="keywords">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Aenan's 100k Exp Calculator for DelugeRPG</title>
+    <link href="images/aenan.ico" rel="shortcut icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+    <link href="style.css?v=2" media="screen" rel="stylesheet">
 </head>
 <body>
-
-<div id="mainpage">
-	<div id="aside">
-    
-    <div id="nav">
-    <center>
-    <img src="images/darkrai.png" style="border: 1px solid #222; border-radius: 90px; background-color: #CCC;"/>&nbsp;&nbsp;<img src="images/aenanlogo.png"/>    <div style="font-size:10px;">(version 0.2 - 20192109)</div>
-    <p style="font-weight:bold;"><small>Based on <a href="https://psyduck.pkmn.pw/expcalc/" target="_blank">Psyduck's Exp Calculator</a></small></p>
-    </center>
+    <div id="mainpage">
+        <div id="aside">
+            <div id="nav">
+                <center>
+                    <img src="images/darkrai.png" style="border: 1px solid #222; border-radius: 90px; background-color: #CCC;">&nbsp;&nbsp;<img src="images/aenanlogo.png">
+                    <div style="font-size:10px;">
+                        <p style="font-weight:bold;"><small>Based on <a href="https://psyduck.pkmn.pw/expcalc/" target="_blank">Psyduck's Exp Calculator</a></small></p>
+                    </div>
+                </center>
+            </div>
+            <center>
+                <a id="howlink"><img src="images/magikarp.png" style="display:inline-block;border-radius: 90px;" width="7%">&nbsp;&nbsp;<i>HOW TO USE THIS EXP CALCULATOR?</i></a>
+            </center>
+            <center>
+                <a id="returncalcu"><img src="images/slowpoke.png" style="display:inline-block;border-radius: 90px;" width="7%">&nbsp;&nbsp;<i>RETURN TO CALCULATOR</i></a>
+            </center>
+            <form class="form-inline" id="entryform" name="entryform">
+                <div class="form-group">
+                    <label for="currentExp">Current Exp</label> <input class="form-control" id="currentExp" max="99977" min="99000" name="currentExp" placeholder="0" required="" style="width: 14em" type="number">
+                </div>
+                <div class="form-group">
+                    <label for="targetExp">Target Exp</label> <input class="form-control" disabled id="targetExp" name="targetExp" title="Note: The Target Exp is 100K" type="text" value="100,000">
+                </div>
+            </form>
+            <div id="targetbox">
+                <b>Exp to target :</b> <span id="exp2target">0</span>
+            </div>
+            <table class="table table-hover" id="battletable">
+                <thead>
+                    <tr>
+                        <th>Trainer</th>
+                        <th>Battles</th>
+                        <th>Exp</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <th>Total</th>
+                        <th></th>
+                        <th></th>
+                        <th data-num="0" id="bttotal">0</th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table><!-- How to use -->
+            <div id="howtouse" style="text-align: justify; padding-right:25px; display:none;">
+                <br>
+                <h4 style="padding-left:25px; font-weight:bold;"><img src="images/magikarp.png" style="display:inline-block; border: 1px solid #222; border-radius: 90px;">&nbsp;&nbsp;&nbsp;How To Use?</h4><br>
+                <ol>
+                    <li>Left Panel - Calculator and Right Panel - List of Wild Pokemon & Trainers Exp.
+                        <p></p><img src="images/hows.jpg" width="100%">
+                        <p></p>
+                    </li>
+                    <li>Type your pokemon's current experience. Note: Target Exp is already assigned as 100,000 value.
+                        <p></p><img src="images/how1.jpg" width="100%">
+                        <p></p>
+                    </li>
+                    <li>It will shows solution button. Battle only pokemon and trainer(s) which generated by the calculator.
+                        <p></p><img src="images/how2.jpg" width="100%">
+                        <hr style="border:1px solid #222;">
+                        <img src="images/how2-1.jpg" width="100%">
+                        <p></p>
+                    </li>
+                    <li>If no possible solution generate, try to check and click the list in the right panel. (It's better to calculate first before you get your ideal experience).
+                        <p></p>
+                    </li>
+                    <li>If you want other EXP Calculator for DelugeRPG - visit <a href="https://psyduck.pkmn.pw/expcalc/" style="color:#F00;" target="_blank">Psyduck Exp Calculator</a> and <a href="https://simplecalc.github.io/expcalc/" style="color:#F00;" target="_blank">Tolga's Exp Calculator (Outdated)</a>.
+                    </li>
+                </ol>
+            </div><!-- How to use -->
+        </div><!-- Aside End -->
+        <div id="bside">
+            <div id="infobox">
+                <b>NOTE:</b> <!-- This calculator is for pokemon with 99K Exp and target limit is 100K Exp. <br> -->
+                 Your pokemon must be Level 99 and the current exp must be minimum of 99,000 and maximum of 99,977.<br>
+                You can battle any other wild pokemon/trainers that give the same amount of exp as those in the suggested solution.<br>
+            </div>
+        </div>
     </div>
-     
-     <center><a id="howlink" ><img src="images/magikarp.png" width="7%" style="display:inline-block;border-radius: 90px;"/>&nbsp;&nbsp;<i>HOW TO USE THIS EXP CALCULATOR?</i></a></center>
-     
-     
-     <center><a id="returncalcu"><img src="images/slowpoke.png" width="7%" style="display:inline-block;border-radius: 90px;"/>&nbsp;&nbsp;<i>RETURN TO CALCULATOR</i></a></center>
-     
-     
-		<form class="form-inline" id="entryform">
-			<div class="form-group">
-				<label for="currentExp">Current Exp</label>
-				<input type="number" required style="width: 14em" class="form-control" id="currentExp" name="currentExp" placeholder ="0" min="99000" max="99977">
-			</div>
-		  	<div class="form-group">
-				<label for="targetExp">Target Exp</label>
-				<input type="text" class="form-control" id="targetExp" name="targetExp" value="100,000" title = "Note: The Target Exp is 100K" disabled>
-			</div>        
-		</form>
-        
-        
-            
-		<div id="targetbox">
-			<b>Exp to target : </b> <span id="exp2target">0</span>
-		</div>
-		<table id="battletable" class="table table-hover" >
-			<thead>
-				<tr>
-					<th>Trainer</th>
-					<th>Battles</th>
-					<th>Exp</th>
-					<th>Total</th>
-					<th></th>
-				</tr>
-			</thead>
-			<tbody>
-				
-			</tbody>
-			<tfoot>
-				<tr>
-					<th>Total</th>
-					<th></th>
-					<th></th>
-					<th id="bttotal" data-num="0">0</th>
-					<th></th>
-				</tr>
-			</tfoot>
-		</table>
-        
-<!-- How to use -->       
-<div style="text-align: justify; padding-right:25px; display:none;" id="howtouse">
-<br>
-<h4 style="padding-left:25px; font-weight:bold;"><img src="images/magikarp.png" style="display:inline-block; border: 1px solid #222; border-radius: 90px;"/>&nbsp;&nbsp;&nbsp;How To Use?</h4>
-<br>
-<ol>
-        <li>Left Panel - Calculator and Right Panel - List of Wild Pokemon & Trainers Exp.</li>
-        <p></p>
-       <img src="images/hows.jpg" width="100%">
-        <p></p>
-        <li>Type your pokemon's current experience. Note: Target Exp is already assigned as 100,000 value.</li>
-        <p></p>
-        <img src="images/how1.jpg" width="100%">
-        <p></p>
-        <li>It will shows solution button. Battle only pokemon and trainer(s) which generated by the calculator.</li>
-        <p></p>
-        <img src="images/how2.jpg" width="100%"><hr style="border:1px solid #222;"><img src="images/how2-1.jpg" width="100%">
-        <p></p>
-        <li>If no possible solution generate, try to check and click the list in the right panel. (It's better to calculate first before you get your ideal experience).
-        </li>
-        <p></p>
-        <li>If you want other EXP Calculator for DelugeRPG - visit <a href="https://psyduck.pkmn.pw/expcalc/" target="_blank" style="color:#F00;">Psyduck Exp Calculator</a> and <a href="https://simplecalc.github.io/expcalc/" target="_blank" style="color:#F00;">Tolga's Exp Calculator (Outdated)</a>.</li>
-        </ol>
-</div>
-<!-- How to use -->             
-            
-
-	</div> <!-- Aside End -->
-    
-	<div id="bside">
-    
-        <div id="infobox">
-        <b>NOTE:</b> <!-- This calculator is for pokemon with 99K Exp and target limit is 100K Exp. <br> -->
-        Your pokemon must be Level 99 and the current exp must be minimum of 99,000 and maximum of 99,977. 
-        <br>You can battle any other wild pokemon/trainers that give the same amount of exp as those in the suggested solution.<br>
-        </div>        
-            
-    </div>
-
-</div>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="script.js?v=2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js">
+    </script> 
+    <script src="script.js?v=2">
+    </script>
 </body>
 </html>
