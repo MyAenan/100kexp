@@ -73,7 +73,7 @@ $(document).ready(function() {
 		} else if( targExp == currExp ) {
 			createAlert('success','You are already at the Target Exp!');
 		} else if( currExp < 99000 || currExp > 99977 ) {
-			createAlert('error','This calculator only works for 99,000 and 99,777 Exp');
+			createAlert('error','This calculator only works for 99,000 and 99,977 Exp');
 		}  else if ( targExp - currExp - calcExp < 1 && targExp - currExp - calcExp > 0 ) {
 			createAlert('warning','It is not possible to obtain less than 4 exp from a battle!');
 		} else {			
