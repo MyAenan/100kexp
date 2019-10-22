@@ -9,7 +9,9 @@ $(document).ready(function() {
 			pdata.push({
 				'opp' : batt.opp,
 				'exp' : batt.exp,
-				'head' : batt.head
+				'head' : batt.head,
+				'id' : batt.id
+				
 			});
 		});
 		pdata.sort(function(a,b) {
@@ -17,11 +19,40 @@ $(document).ready(function() {
 		});
 		pdata.forEach(function(batt, i) {
 			if(typeof(batt.opp) !== "undefined") {
-				$('#bside').append('<div id="batt'+i+'" class="btn btn-default battler bg-'+toLower(batt.head)+'" data-exp="'+batt.exp+'" data-opp="'+batt.opp+'" data-head="'+toLower(batt.head)+'">' +
+				if(typeof(batt.id) === "undefined") {
+							$('#bside').append('<a href="#" class="popover-maps" data-toggle="popover" style="color:#000;"><div id="batt'+i+'" class="btn btn-default battler bg-'+toLower(batt.head)+'" style="background-image:url(images/avatar/'+ batt.head +'.png);background-repeat: no-repeat; background-position: 100% 0%;">' +
 									'<b>' + batt.opp + '</b><br>' +
 									'<small>(' + batt.head + ')</small><br>' +
 									'Exp: ' + numberWithCommas(batt.exp) +
-								'</div>');
+								'</div></a>');
+							
+				$('.popover-maps').popover({
+				trigger: 'focus',
+				html:true,
+				placement:'bottom',
+				title:'Battle Wild Pokemon',
+				content:'<a href="https://www.delugerpg.com/home#maps" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/home#maps"  target="_blank" class ="btn btn-primary btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+				})
+
+
+				}
+				else{
+				$('#bside').append('<a href="#" class="popover-dismiss" data-toggle="popover" style="color:#000;"><div id="batt'+i+'" class="btn btn-default battler bg-'+toLower(batt.head)+'" style="background-image:url(images/avatar/'+batt.opp+'.png);background-repeat: no-repeat; background-position: 100% 0%;"> ' +
+									'<b>' + batt.opp + '</b><br>' +
+									'<small>(' + batt.head + ')</small><br>' +
+									'Exp: ' + numberWithCommas(batt.exp) +
+								'</div></a>');
+				
+				$('.popover-dismiss').popover({
+				trigger: 'focus',
+				html:true,
+				placement:'bottom',
+				title:'Battle Trainers or Pokemon',
+				content:'<a href="https://www.delugerpg.com/npc/'+ batt.id +'/'+ batt.head +'" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/npc/'+ batt.id +'/'+ batt.head +'"  target="_blank" class ="btn btn-primary btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+				})
+
+
+				}
 			}
 		});
 		
@@ -66,14 +97,16 @@ $(document).ready(function() {
 		var currExp = checkAndFixExp( $('#currentExp').val() );
 		var targExp = checkAndFixExp( $('#targetExp').val() );
 		var calcExp = checkAndFixExp( $('#bttotal').data('num') );
-		  if( currExp == 0 ) {
+		if( currExp == 0 ) {
 			createAlert('error','You need to put Current Exp');
+	    } else if( targExp < 100000 || targExp > 100000 ) {
+			createAlert('error','The Target Exp must be 100,000 only');
 	    } else if( targExp < currExp ) {
 			createAlert('error','Current Exp appears to be higher than Target Exp');
 		} else if( targExp == currExp ) {
 			createAlert('success','You are already at the Target Exp!');
 		} else if( currExp < 99000 || currExp > 99977 ) {
-			createAlert('error','This calculator only works for 99,000 and 99,977 Exp');
+			createAlert('error','This calculator only works for 99,000 and 99,777 Exp');
 		}  else if ( targExp - currExp - calcExp < 1 && targExp - currExp - calcExp > 0 ) {
 			createAlert('warning','It is not possible to obtain less than 4 exp from a battle!');
 		} else {			
@@ -86,7 +119,10 @@ $(document).ready(function() {
 		}
 	});
 	//$('#entryform input:first-of-type').trigger('change');
-	 
+	
+	
+	$('[data-toggle="tooltip"]').tooltip();
+	
 	
     //how to use
 	$(document).on('click', "#howlink", function(e) {
@@ -305,3 +341,4 @@ function toLower(x) {
 	if(typeof x == 'undefined') return '';
 	return x.toLowerCase();
 }
+
