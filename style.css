@@ -4,11 +4,12 @@ body {
 }
 
 #infobox {
-	padding:3.2% 0px;
-	margin-bottom:20px;
+    padding:3.2% 0px;
+    margin-bottom:20px;
     background-color:#222;
-	color:#E4E4E4;
+    color:#E4E4E4;
 }
+
 #mainpage {
     min-height: 90%;
 }
