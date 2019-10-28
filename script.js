@@ -20,7 +20,7 @@ $(document).ready(function() {
 		pdata.forEach(function(batt, i) {
 			if(typeof(batt.opp) !== "undefined") {
 				if(typeof(batt.id) === "undefined") {
-							$('#bside').append('<buttonn id="batt'+i+'" class="popover-maps btn btn-default battler bg-'+toLower(batt.head)+'" data-toggle="popover" style="background-image:url(images/avatar/'+ batt.head +'.png);background-repeat: no-repeat; background-position: 100% 0%;">' +
+							$('#bside').append('<button	id="batt'+i+'" class="popover-maps btn btn-default battler bg-'+toLower(batt.head)+'" data-toggle="popover" style="background-image:url(images/avatar/'+ batt.head +'.png);background-repeat: no-repeat; background-position: 100% 0%;">' +
 									'<b>' + batt.opp + '</b><br>' +
 									'<small>(' + batt.head + ')</small><br>' +
 									'Exp: ' + numberWithCommas(batt.exp) +
@@ -72,9 +72,9 @@ $(document).ready(function() {
 	
 	
 	//$(document).on('click', ".battler", function(e) {
-	//	var bid = $(this).attr('id').substring(4);
-	//	addBattleEntry( bid, $(this).data('opp'), $(this).data('exp'), $(this).data('head') );
-	//	calcTotals();
+		//var bid = $(this).attr('id').substring(4);
+		//addBattleEntry( bid, $(this).data('opp'), $(this).data('exp'), $(this).data('head') );
+		//calcTotals();
 	//});
 	
 	$(document).on('click', ".btclose .close", function(e) {
