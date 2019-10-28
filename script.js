@@ -29,7 +29,7 @@ $(document).ready(function() {
 				$('.popover-maps').popover({
 				trigger: 'focus',
 				html:true,
-				placement:'bottom',
+				placement:'top',
 				title:'Battle Wild Pokemon',
 				content:'<a href="https://www.delugerpg.com/home#maps" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/home#maps"  target="_blank" class ="btn btn-primary btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 				})
@@ -44,10 +44,10 @@ $(document).ready(function() {
 								'</button>');
 				
 				$('.popover-dismiss').popover({
-				trigger: 'focus',
+				trigger: 'focusin',
 				html:true,
 				placement:'bottom',
-				title:'Battle Trainers or Pokemon',
+				title:'Battle Trainers/Pokemon',
 				content:'<a href="https://www.delugerpg.com/npc/'+ batt.id +'/'+ batt.head +'" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/npc/'+ batt.id +'/'+ batt.head +'"  target="_blank" class ="btn btn-primary btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 				})
 
