@@ -1,0 +1,219 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+	/* background-color: #f1f1f1; */
+}
+
+.popover {
+   width: 180px !important;
+   max-width:300px !important;
+}
+
+.btn-xs{
+font-size:13px;
+}
+
+.bordertop{
+border-bottom-right-radius:0px; 
+border-bottom-left-radius:0px; 
+width:100%; 
+border-top:1px solid #8C8C8C; 
+border-left:1px solid #8C8C8C; 
+border-right:1px solid #8C8C8C; 
+}
+
+.borderbottom{
+border-top-right-radius:0px;
+border-top-left-radius:0px;
+width:100%;
+border-bottom:1px solid #8C8C8C;
+border-left:1px solid #8C8C8C;
+border-right:1px solid #8C8C8C;
+}
+
+
+
+#infobox {
+	padding:1.85% 0px;
+	margin-bottom:10px;
+    background-color:#222;
+	color:#E4E4E4;
+}
+#mainpage {
+    min-height: 90%;
+}
+
+#aside, #bside {
+    float: left;
+    box-sizing: border-box;
+    max-height: 100%;
+    /* overflow-x: scroll; */
+}
+
+#aside {
+    width: 34%;
+	position:fixed;
+	/* background-color: #222; */
+    height: 100%;
+	padding-bottom:20px;
+}
+
+#nav{
+	/* padding-top:13%; */
+	background-color:#222;
+	color:#FFF;
+	padding:3px 0 0px 0;
+    height:12%;
+}
+
+#navmenu{
+	color: #FFF;  
+	background-color:#222; 
+	font-size:12px; 
+	text-decoration:none; 
+	padding:3px 0; 
+	cursor:pointer; 
+	display: inherit; 
+	width:96%; 
+	border-top:1px solid #666;	
+	border-bottom-left-radius:15px; 
+	border-bottom-right-radius:15px;	
+}
+
+#howtouse, #aboutpage {
+	text-align: justify; 
+	padding-right:25px; 
+	display:none; 
+	padding-bottom:10px;
+	overflow-y: scroll; 
+	height:80%;
+}
+
+
+#close {
+	font-size:12px; 
+	color: #FFF; 
+	text-decoration:none; 
+	cursor:pointer;
+}
+
+#bside {
+    border-left: 1px solid #222;
+    text-align: center;
+	margin-left: 34%;
+	background-color: #FFF;
+	height:auto;
+}
+
+#bside .battler {
+    font-size: 13px;
+    line-height: 15px;
+    width: 150px;
+    height: 80px;
+    margin: 0.9%;
+    text-align: center;
+    display: inline-block;
+    /*background-color: #FFFFFF;*/
+	border-radius: 7px;	
+
+}
+#bside .battler b {
+	width: auto;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	word-break: break-all;
+	white-space:normal;
+}
+
+#bside .battler small {
+    font-size: 10px;
+    line-height: 22px;
+	white-space: pre-line;
+}
+
+#entryform {
+    text-align: center;
+    margin: 5px auto 20px;
+    height: 70px;
+	padding-top:20px;
+}
+
+#ultiform {
+    text-align: left;
+    /* margin: 0px 20px; */
+	margin: 10px 0px 50px 12px;	
+}
+
+#entryform > .form-group {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    display: block;
+}
+
+#entryform > .form-group > label, #entryform > .form-group > input {
+    display: block;
+    margin: 0 auto;
+}
+
+#trainform {
+    text-align: left;
+    margin: 10px 8px 10px 12px;
+    height: auto;
+	padding-top:10px;
+}
+
+
+#trainform > .form-group {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    display: block;
+}
+
+#trainform > .form-group > label, #entryform > .form-group > input {
+    display: block;
+    margin: 0 auto;
+}
+
+#targetbox {
+    clear: both;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#battletable {
+    clear: both;
+}
+
+#battletable .close {
+    color: #000;
+    text-align: center;
+    float: none;
+}
+
+.bg-trainers { background-color: #FFF3E0; }
+.bg-gym { background-color:#D3FCFE; }
+.bg-wild { background-color: #CEFFC6 }
+.bg-ash { background-color:#D3FCFE; }
+.bg-female { background-color: #FFF3E0; }
+.bg-male { background-color: #CEFFC6 }
+.bg-gary { background-color: #EFEBE9; }
+.bg-n { background-color: #FCE4EC; }
+.bg-silver { background-color: #F1F8E9; }
+
+
+@media screen and (max-width: 700px) {
+  .navbar{
+	  width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #aside {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #aside a {}
+  #bside {margin-left: 0;}
+}
