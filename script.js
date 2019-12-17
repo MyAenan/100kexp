@@ -1,8 +1,17 @@
 var prepdata = [];
 var pdata = [];
 var solvedsoluton = '';
+var currentTime = new Date();
+var month = currentTime.getMonth() + 1;
+var total = month;
+if (total % 2 == 0){
+	var compbattle = "Comp-Battle";
+}else{
+	var compbattle = "Comp-Battle-1";
+}
 
 $(document).ready(function() {
+						   
 	$.getJSON('100kexp.json', function(data) {
 		var temphead = '';
 		data.forEach(function (batt,i) {
@@ -19,7 +28,7 @@ $(document).ready(function() {
 		});
 		pdata.forEach(function(batt, i) {
 			if(typeof(batt.opp) !== "undefined") {
-				if(typeof(batt.id) === "undefined") {
+				if(batt.head === "Wild") {
 							$('#bside').append('<button	id="batt'+i+'" class="popover-maps btn btn-default battler bg-'+toLower(batt.head)+'" data-toggle="popover" style="background-image:url(images/avatar/'+ batt.head +'.png);background-repeat: no-repeat; background-position: 100% 0%;">' +
 									'<b>' + batt.opp + '</b><br>' +
 									'<small>(' + batt.head + ')</small><br>' +
@@ -35,7 +44,25 @@ $(document).ready(function() {
 				})
 
 
+				}else if(batt.head === "Comp-Battle") {
+							$('#bside').append('<button	id="batt'+i+'" class="popover-maps btn btn-default battler bg-'+toLower(batt.head)+'" data-toggle="popover" style="background-image:url(images/avatar/'+ compbattle +'.png);background-repeat: no-repeat; background-position: 100% 0%;">' +
+									'<b>' + batt.opp + '</b><br>' +
+									'<small>(' + batt.head + ')</small><br>' +
+									'Exp: ' + numberWithCommas(batt.exp) +
+								'</button>');
+							
+				$('.popover-maps').popover({
+				trigger: 'focus',
+				html:true,
+				placement:'top',
+				title:'Battle Computer Trainer',
+				content:'<a href="https://www.delugerpg.com/battle/computer/new" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/computer/new"  target="_blank" class ="btn btn-primary btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+				})
+
+
 				}
+				
+				
 				else{
 				$('#bside').append('<button id="batt'+i+'" class="popover-dismiss btn btn-default battler bg-'+toLower(batt.head)+'"  data-toggle="popover"  style="background-image:url(images/avatar/'+batt.opp+'.png);background-repeat: no-repeat; background-position: 100% 0%;"> ' +
 									'<b>' + batt.opp + '</b><br>' +
@@ -279,7 +306,10 @@ $(document).ready(function() {
 	
 	//Load Solution button
 	$(document).on('click', "#loadsolution", function(e) {
+		
+		$('#battletable').fadeIn();
 	    $('#refresh').fadeIn();
+		$('#targetbox').slideUp();
 		$('#currentExp,#targetExp').attr('disabled','true');
 		removeAlert();
 		loadSolution();
@@ -465,10 +495,11 @@ function addBattleEntry(bid, opp, exp, head) {
 	} else {
 		var html = '<tr class="btitem bg-'+toLower(head)+'" id="bt_'+bid+'">' +
 						'<td class="name">' + opp + '</td>' +
-						'<td class="battles">1</td>' +
-						'<td class="exp" data-num="' + exp + '">' + numberWithCommas(exp) + '</td>' +
-						'<td class="total" data-num="' + exp + '">' + numberWithCommas(exp) + '</td>' +
-						'<td class="btclose"><button class="close" type="button"><span>×</span></button></td>' +
+						'<td class="name" style="text-align:center; font-size:12px;">' + head + '</td>' +
+						'<td class="battles" style="text-align:center">1</td>' +
+						'<td class="exp" data-num="' + exp + '" style="text-align:center">' + numberWithCommas(exp) + '</td>' +
+						'<td class="total" data-num="' + exp + '" style="text-align:center">' + numberWithCommas(exp) + '</td>' +
+						'<td class="btclose"></td>' +
 					'</tr>';
 		$('#battletable').append(html);
 	}
