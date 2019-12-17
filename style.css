@@ -4,7 +4,7 @@ body {
 }
 
 .popover {
-   width: 198px !important;
+   width: 180px !important;
    max-width:300px !important;
 }
 
@@ -33,10 +33,12 @@ border-right:1px solid #8C8C8C;
 
 
 #infobox {
-	padding:1.85% 0px;
+	padding:1.05% 0px;
 	margin-bottom:10px;
     background-color:#222;
 	color:#E4E4E4;
+	font-size:13px;
+	
 }
 #mainpage {
     min-height: 90%;
@@ -178,7 +180,7 @@ border-right:1px solid #8C8C8C;
 #targetbox {
     clear: both;
     width: 100%;
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -193,8 +195,10 @@ border-right:1px solid #8C8C8C;
 }
 
 .bg-trainers { background-color: #FFF3E0; }
-.bg-gym { background-color:#D3FCFE; }
+.bg-gym { background-color: #FFFFCA }
 .bg-wild { background-color: #CEFFC6 }
+.bg-comp-battle { background-color: #D3FCFE;  }
+.bg-comp-battle-1 { background-color: #D3FCFE;  }
 .bg-ash { background-color:#D3FCFE; }
 .bg-female { background-color: #FFF3E0; }
 .bg-male { background-color: #CEFFC6 }
