@@ -22,7 +22,9 @@
     <center>
      <div id="nav" style="background-image:url(images/avatar.png);background-repeat: no-repeat; background-position: 5% 100%;">
     <img src="images/aenanlogo.png"  width="310" height="52" style="margin-left:10px;">   
-     <div style="font-size:10px;">By <a href="https://pkmn.pw/Dmaster/profile" target="_blank" style="font-size:11px; font-weight:bold; color:#F00 ">Dmaster</a> - (version 0.3b - [beta] 20191205)</div>
+     <div style="font-size:10px;">By <a href="https://pkmn.pw/Dmaster/profile" target="_blank" style="font-size:11px; font-weight:bold; color:#F00 ">Dmaster</a> - (version 0.3b - [beta] 20191205)
+     </div>
+     </div>
     </center>
     </div>
      
@@ -48,21 +50,22 @@
 		</form>
         
         
-         <div id="refresh" align="center" style="display:none;">
-        <button class="btn btn-success btn-sm" style="margin-left:20px;"><i class="fad fa-spinner"></i> &nbsp;&nbsp;Try to Calculate Another Exp ?</button>
+         <div id="refresh" align="center" style="display:none; margin: 20px auto;">
+        <button class="btn btn-success btn-sm" style="margin-left:20px;"><i class="fad fa-refresh"></i> &nbsp;&nbsp;Try to Calculate Another Exp ?</button>
         </div> 
           
 		<div id="targetbox">
 			<b>Exp to target : </b> <span id="exp2target">0</span>
 		</div>
         
-		<table id="battletable" class="table table-hover" >
+		<table id="battletable" class="table table-hover" style="display:none;">
 			<thead>
 				<tr>
 					<th>Trainer</th>
-					<th>Battles</th>
-					<th>Exp</th>
-					<th>Total</th>
+                    <th style="text-align:center">Info</th>
+					<th style="text-align:center">Battles</th>
+					<th style="text-align:center">Exp</th>
+					<th style="text-align:center">Total</th>
 					<th></th>
 				</tr>
 			</thead>
@@ -72,9 +75,10 @@
 			<tfoot>
 				<tr>
 					<th>Total</th>
+                    <th></th>
 					<th></th>
 					<th></th>
-					<th id="bttotal" data-num="0">0</th>
+					<th id="bttotal" data-num="0" style="text-align:center">0</th>
 					<th></th>
 				</tr>
 			</tfoot>
@@ -104,7 +108,8 @@
         <li>If no possible solution generate, try to battle wild pokemon in map. (It's better to calculate first before you get your ideal experience).
         </li>
         <p></p>
-        <li>You can click the trainer and pokemon in right panel. It will shows a popover that will redirect to the trainers and map for wild pokemon.	
+        <li>You can click the trainer and pokemon in right panel. It will shows a popover that will redirect to the trainers and map for wild pokemon.
+        <br><small><i>*(Comp-Battle) - Find a player/trainer who has one pokemon on his/her team with designated level given and battle it.</i></small>	
         </li>
         <p></p>
          <img src="images/how5.jpg" width="100%">
@@ -294,6 +299,61 @@ For checking the design & errors and gathering data about exp on each trainers a
 </li>
 </ul>
 </p>
+<hr style="border:1px solid #222; margin-left:25px;">
+<h4 style="padding:0px 0px 10px 25px; font-weight:bold;" align="left"><img src="images/slowpoke.png" style="display:inline-block; border: 1px solid #222; border-radius: 90px;"/>&nbsp;&nbsp;&nbsp;Change Logs</h4>
+
+<div style="padding-left:25px;">
+<p>
+<b><u>version 0.1</u></b><br>
+Deployed - 2019/09/23 <br>
+<ul>
+<li>
+https://aenancalculator.000webhostapp.com <br>
+<small>- link for 100k exp calculator (outdated)</small>
+</li>
+</ul>
+</p>
+
+<p>
+<b><u>version 0.2</u></b><br>
+Deployed - 2019/10/20 <br>
+The web page deployed in github.
+<ul>
+<li>
+The page used code and design of Psyduck's Exp Calculator. <br>
+</li>
+</ul>
+<b><u>version 0.2b</u></b><br>
+Added - 2019/10/28
+<ul>
+<li>Slidedown Help Page.</li>
+<li>Add some solution to the current exp.</li>
+<li>Image Background in Gym, Trainers and Pokemon (Right Panel).</li>
+<li>A popover shows when click in the gym, trainer and wild  (popover for battle button).</li>
+</ul>
+<b><u>version 0.2c</u></b><br>
+Updated - 2019/10/31
+<ul>
+<li>A popover for battle for gym, trainer and wild have a desktop and mobile button link.</li>
+<li>Fixed minor errors</li>
+</ul>
+</p>
+
+<p>
+<b><u>version 0.3</u></b><br>
+Added - 2019/12/05
+<ul>
+<li>About Page and Change Logs.</li>
+<li>Training Accounts
+<ul>
+<li>Add Ultimate Trainers which redirect to battle link (normal and inverse battle).</li>
+<li>Add S-Type Training Account of Yuichi.</li>
+</ul>
+</li>
+<li>Added "Comp-Battle" in the trainers/wild pokemon list.</li>
+</ul>
+</p>
+</div>
 
 </div>
 <!-- ABOUT --> 
@@ -310,6 +370,7 @@ For checking the design & errors and gathering data about exp on each trainers a
         <b>NOTE:</b> <!-- This calculator is for pokemon with 99K Exp and target limit is 100K Exp. <br> -->
         Your pokemon must be Level 99 and the current exp must be minimum of 99,000 and maximum of 99,977. 
         <br>You can battle any other wild pokemon/trainers that give the same amount of exp as those in the suggested solution.
+        <br>* (Comp-Battle) - Find a player/trainer who has one pokemon on his/her team with designated level given and battle it.
         </div>        
             
 	</div>
