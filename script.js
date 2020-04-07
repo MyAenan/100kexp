@@ -56,7 +56,7 @@ $(document).ready(function() {
 				html:true,
 				placement:'top',
 				title:'Battle Computer Trainer',
-				content:'<a href="https://www.delugerpg.com/battle/computer/new" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/computer/new"  class ="btn btn-primary btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+				content:'<a href="https://www.delugerpg.com/battle/computer/new" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/computer/new"  target="_blank" class ="btn btn-primary btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 				})
 
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
 				html:true,
 				placement:'bottom',
 				title:'Battle Trainers',
-				content:'<a href="https://www.delugerpg.com/battle/'+ batt.head +'/'+ batt.id +'" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/'+ batt.head +'/'+ batt.id +'"  target="_blank" class ="btn btn-primary btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+				content:'<a href="https://www.delugerpg.com/npc/'+ batt.id +'/'+ batt.head +'" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/npc/'+ batt.id +'/'+ batt.head +'"  target="_blank" class ="btn btn-primary btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 				})
 
 
