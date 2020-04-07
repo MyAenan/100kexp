@@ -75,7 +75,7 @@ $(document).ready(function() {
 				html:true,
 				placement:'bottom',
 				title:'Battle Trainers',
-				content:'<a href="www.delugerpg.com/battle/'+ batt.head +'/'+ batt.id +'" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="m.delugerpg.com/battle/'+ batt.head +'/'+ batt.id +'"  target="_blank" class ="btn btn-primary btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+				content:'<a href="www.delugerpg.com/battle/'+ batt.head +'/'+ batt.id +'" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="m.delugerpg.com/battle/'+ batt.head +'/'+ batt.id +'"  target="_blank" class ="btn btn-primary btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 				})
 
 
