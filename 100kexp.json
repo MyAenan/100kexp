@@ -41,7 +41,8 @@
 	{ "opp": "Brawly", "exp": "628", "head": "Gym", "id": "302" },
 	{ "opp": "Roxie", "exp": "711", "head": "Gym", "id": "506" },
 	{ "opp": "Whitney", "exp": "753", "head": "Gym", "id": "203" },
-	{ "opp": "Roark", "exp": "795", "head": "Gym", "id": "401" },		
+	{ "opp": "Roark", "exp": "795", "head": "Gym", "id": "401" },
+	{ "opp": "Milo", "exp": "816", "head": "Gym", "id": "801" },	
 	
 	{ "opp": "Preschooler_Annie", "exp": "558", "head": "Trainers", "id": "5081" },
 	{ "opp": "Preschooler_Dora", "exp": "558", "head": "Trainers", "id": "5082" },
