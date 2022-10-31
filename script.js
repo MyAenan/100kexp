@@ -435,7 +435,7 @@ function findPossibleCombo() {
 	if(target == 0) {
 		//console.log('Final Solution: ' + solution);
 		solvedsoluton = solution;
-		createAlert('success','A solution has been calculated for this target exp.<br><br><button id="loadsolution" class="btn btn-success" style="background-image:url(images/dark.png);background-repeat: no-repeat; background-position: 0% 35%; padding-left:45px;">Darkrai Solution</button>');
+		createAlert('success','A solution has been calculated for this target exp.<br><br><button id="loadsolution" class="btn btn-success" style="background-image:url(images/dark.png);background-repeat: no-repeat; background-position: 0% 35%; padding-left:45px;">Show Solution</button>');
 	} else {
 		console.log('No Solution');
 		solvedsoluton = '';
