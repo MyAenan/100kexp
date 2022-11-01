@@ -40,7 +40,7 @@ $(document).ready(function() {
 				html:true,
 				placement:'top',
 				title:'Battle Wild Pokemon',
-				content:'<a href="https://www.delugerpg.com/home#maps" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/home#maps"  target="_blank" class ="btn btn-primary btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+				content:'<a href="https://www.delugerpg.com/home#maps" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktops</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/home#maps"  target="_blank" class ="btn btn-primary btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 				})
 
 
