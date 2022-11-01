@@ -40,7 +40,7 @@ $(document).ready(function() {
 				html:true,
 				placement:'top',
 				title:'Battle Wild Pokemon',
-				content:'<a href="https://www.delugerpg.com/home#maps" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktops</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/home#maps"  target="_blank" class ="btn btn-primary btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+				content:'<a href="https://www.delugerpg.com/home#maps" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/home#maps"  target="_blank" class ="btn btn-primary btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 				})
 
 
@@ -56,7 +56,7 @@ $(document).ready(function() {
 				html:true,
 				placement:'top',
 				title:'Battle Computer Trainer',
-				content:'<a href="https://www.delugerpg.com/battle/computer/new" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/computer/new"  target="_blank" class ="btn btn-primary btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+				content:'<a href="https://www.delugerpg.com/battle/computer/new" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/computer/new"  target="_blank" class ="btn btn-primary btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 				})
 
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
 				html:true,
 				placement:'bottom',
 				title:'Battle Trainers',
-				content:'<a href="https://www.delugerpg.com/npc/'+ batt.id +'/'+ batt.head +'" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/npc/'+ batt.id +'/'+ batt.head +'"  target="_blank" class ="btn btn-primary btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+				content:'<a href="https://www.delugerpg.com/npc/'+ batt.id +'/'+ batt.head +'" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/npc/'+ batt.id +'/'+ batt.head +'"  target="_blank" class ="btn btn-primary btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 				})
 
 
@@ -190,7 +190,7 @@ $(document).ready(function() {
 		title:'Normal Battle',
 		content:function() {
 		const value = $('#s-trainer').val();
-			return '<a href="https://www.delugerpg.com/battle/computer/u/' + value + '" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/computer/u/' + value + '"  target="_blank" class ="btn btn-warning btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+			return '<a href="https://www.delugerpg.com/battle/computer/u/' + value + '" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/computer/u/' + value + '"  target="_blank" class ="btn btn-warning btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 	 }
 	 });
 	
@@ -202,7 +202,7 @@ $(document).ready(function() {
 		title:'Inverse Battle',
 		content:function() {
 			const value = $('#s-trainer').val();
-			return '<a href="https://www.delugerpg.com/battle/computer/u/' + value + '/inverse" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/computer/u/' + value + '/inverse"  target="_blank" class ="btn btn-warning btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+			return '<a href="https://www.delugerpg.com/battle/computer/u/' + value + '/inverse" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/computer/u/' + value + '/inverse"  target="_blank" class ="btn btn-warning btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 		}
 		});	
 	
@@ -212,7 +212,7 @@ $(document).ready(function() {
 		html:true,
 		placement:'top',
 		title:'Normal Battle',
-		content:'<a href="https://www.delugerpg.com/battle/trainer/5141" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5141"  target="_blank" class ="btn btn-warning btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+		content:'<a href="https://www.delugerpg.com/battle/trainer/5141" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5141"  target="_blank" class ="btn btn-warning btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 		});	
 	// Ash Inverse
 	$('#ashinverse').popover({																			
@@ -220,7 +220,7 @@ $(document).ready(function() {
 		html:true,
 		placement:'bottom',
 		title:'Inverse Battle',
-		content:'<a href="https://www.delugerpg.com/battle/trainer/5141/inverse" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5141/inverse"  target="_blank" class ="btn btn-warning btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+		content:'<a href="https://www.delugerpg.com/battle/trainer/5141/inverse" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5141/inverse"  target="_blank" class ="btn btn-warning btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 		});	
 	// Deluge Female Normal
 	$('#femalenormal').popover({																			
@@ -228,7 +228,7 @@ $(document).ready(function() {
 		html:true,
 		placement:'top',
 		title:'Normal Battle',
-		content:'<a href="https://www.delugerpg.com/battle/trainer/5145" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5145"  target="_blank" class ="btn btn-warning btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+		content:'<a href="https://www.delugerpg.com/battle/trainer/5145" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5145"  target="_blank" class ="btn btn-warning btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 		});	
 	// Deluge Female Inverse
 	$('#femaleinverse').popover({																			
@@ -236,7 +236,7 @@ $(document).ready(function() {
 		html:true,
 		placement:'bottom',
 		title:'Inverse Battle',
-		content:'<a href="https://www.delugerpg.com/battle/trainer/5145/inverse" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5145/inverse"  target="_blank" class ="btn btn-warning btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+		content:'<a href="https://www.delugerpg.com/battle/trainer/5145/inverse" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5145/inverse"  target="_blank" class ="btn btn-warning btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 		});	
 	// Deluge Male Normal
 	$('#malenormal').popover({																			
@@ -244,7 +244,7 @@ $(document).ready(function() {
 		html:true,
 		placement:'top',
 		title:'Normal Battle',
-		content:'<a href="https://www.delugerpg.com/battle/trainer/5146" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5146"  target="_blank" class ="btn btn-warning btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+		content:'<a href="https://www.delugerpg.com/battle/trainer/5146" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5146"  target="_blank" class ="btn btn-warning btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 		});	
 	// Deluge Male Inverse
 	$('#maleinverse').popover({																			
@@ -252,7 +252,7 @@ $(document).ready(function() {
 		html:true,
 		placement:'bottom',
 		title:'Inverse Battle',
-		content:'<a href="https://www.delugerpg.com/battle/trainer/5146/inverse" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5146/inverse"  target="_blank" class ="btn btn-warning btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+		content:'<a href="https://www.delugerpg.com/battle/trainer/5146/inverse" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5146/inverse"  target="_blank" class ="btn btn-warning btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 		});	
 	// Gary Normal
 	$('#garynormal').popover({																			
@@ -260,7 +260,7 @@ $(document).ready(function() {
 		html:true,
 		placement:'top',
 		title:'Normal Battle',
-		content:'<a href="https://www.delugerpg.com/battle/trainer/5140" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5140"  target="_blank" class ="btn btn-warning btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+		content:'<a href="https://www.delugerpg.com/battle/trainer/5140" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5140"  target="_blank" class ="btn btn-warning btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 		});	
 	// Gary Inverse
 	$('#garyinverse').popover({																			
@@ -268,7 +268,7 @@ $(document).ready(function() {
 		html:true,
 		placement:'bottom',
 		title:'Inverse Battle',
-		content:'<a href="https://www.delugerpg.com/battle/trainer/5140/inverse" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5140/inverse"  target="_blank" class ="btn btn-warning btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+		content:'<a href="https://www.delugerpg.com/battle/trainer/5140/inverse" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5140/inverse"  target="_blank" class ="btn btn-warning btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 		});	
 	// N Normal
 	$('#nnormal').popover({																			
@@ -276,7 +276,7 @@ $(document).ready(function() {
 		html:true,
 		placement:'top',
 		title:'Normal Battle',
-		content:'<a href="https://www.delugerpg.com/battle/trainer/5147" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5147"  target="_blank" class ="btn btn-warning btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+		content:'<a href="https://www.delugerpg.com/battle/trainer/5147" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5147"  target="_blank" class ="btn btn-warning btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 		});	
 	// N Inverse
 	$('#ninverse').popover({																			
@@ -284,7 +284,7 @@ $(document).ready(function() {
 		html:true,
 		placement:'bottom',
 		title:'Inverse Battle',
-		content:'<a href="https://www.delugerpg.com/battle/trainer/5147/inverse" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5147/inverse"  target="_blank" class ="btn btn-warning btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+		content:'<a href="https://www.delugerpg.com/battle/trainer/5147/inverse" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5147/inverse"  target="_blank" class ="btn btn-warning btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 		});	
 	// Silver Normal
 	$('#silvernormal').popover({																			
@@ -292,7 +292,7 @@ $(document).ready(function() {
 		html:true,
 		placement:'top',
 		title:'Normal Battle',
-		content:'<a href="https://www.delugerpg.com/battle/trainer/5142" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5142"  target="_blank" class ="btn btn-warning btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+		content:'<a href="https://www.delugerpg.com/battle/trainer/5142" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5142"  target="_blank" class ="btn btn-warning btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 		});	
 	// Silver Inverse
 	$('#silverinverse').popover({																			
@@ -300,7 +300,7 @@ $(document).ready(function() {
 		html:true,
 		placement:'bottom',
 		title:'Inverse Battle',
-		content:'<a href="https://www.delugerpg.com/battle/trainer/5142/inverse" target="_blank" class ="btn btn-info btn-sm"> <i class="fad fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5142/inverse"  target="_blank" class ="btn btn-warning btn-sm"><i class="fad fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
+		content:'<a href="https://www.delugerpg.com/battle/trainer/5142/inverse" target="_blank" class ="btn btn-info btn-sm"> <i class="fa fa-desktop"></i>&nbsp;&nbsp;Desktop</a>&nbsp;&nbsp;<a href="https://m.delugerpg.com/battle/trainer/5142/inverse"  target="_blank" class ="btn btn-warning btn-sm"><i class="fa fa-mobile"></i>&nbsp;&nbsp;Mobile</a>'
 		});	
 	
 	
