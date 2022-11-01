@@ -28,7 +28,7 @@ $(document).ready(function() {
 		});
 		pdata.forEach(function(batt, i) {
 			if(typeof(batt.opp) !== "undefined") {
-				if(batt.head === "Wild") {
+				if(batt.head === "Wild-Pokemon") {
 							$('#bside').append('<button	id="batt'+i+'" class="popover-maps btn btn-default battler bg-'+toLower(batt.head)+'" data-toggle="popover" style="background-image:url(images/avatar/'+ batt.head +'.png);background-repeat: no-repeat; background-position: 100% 0%;">' +
 									'<b>' + batt.opp + '</b><br>' +
 									'<small>(' + batt.head + ')</small><br>' +
