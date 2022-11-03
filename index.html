@@ -14,7 +14,35 @@
 	<link href="style.css?v=2" media="screen" rel="stylesheet">
 </head>
 <body>
-<center> <img src="images/snorlax3.png" height="420" width ="40%"></center>
-<h3 style="text-align:center;">Sorry, I'm Sleeping.<br><img src="images/warning.png">&nbsp;Maintenance.</h3>
+<div id="dvCountDown" style="font-size:25px; text-align:center; 
+	left: 0;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;">
+You will be redirected in <br> New 100k Exp Calculator
+after <span id="lblCount"></span>&nbsp;seconds.
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script type="text/javascript">
+$(function () {
+   
+        var seconds = 3;
+        $("#dvCountDown").show();
+        $("#lblCount").html(seconds);
+        setInterval(function () {
+            seconds--;
+            $("#lblCount").html(seconds);
+            if (seconds == 0) {
+                $("#dvCountDown").hide();
+                window.location = "https://aihvz100k.netlify.app/";
+            }
+        }, 1000);
+		
+   
+});
+</script>
+
 </body>
 </html>
