@@ -165,6 +165,9 @@ border-right:1px solid #8C8C8C;
     margin: 0 auto;
 }
 
+#entryform > .form-group > input[type=number] {
+	width: 120px;
+}
 
 #trainform {
     text-align: left;
