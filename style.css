@@ -81,11 +81,11 @@ border-right:1px solid #8C8C8C;
 	border-bottom-right-radius:15px;	
 }
 
-#howtouse, #aboutpage {
+#howtouse, #aboutpage, #calcuform {
 	text-align: justify; 
 	padding-right:25px; 
 	display:none; 
-	padding-bottom:20px;
+	padding-bottom:25px;
 	overflow-y: scroll; 
 	height:80%;
 }
