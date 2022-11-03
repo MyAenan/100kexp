@@ -85,10 +85,12 @@ border-right:1px solid #8C8C8C;
 	text-align: justify; 
 	padding-right:25px; 
 	display:none; 
-	padding-bottom:10px;
+	padding-bottom:20px;
 	overflow-y: scroll; 
 	height:80%;
 }
+
+
 
 
 #close {
@@ -135,7 +137,6 @@ border-right:1px solid #8C8C8C;
 #entryform {
     text-align: center;
     margin: 5px auto 20px;
-    margin-bottom: 10px;
     height: 70px;
     padding-top:20px;
 }
@@ -158,11 +159,12 @@ border-right:1px solid #8C8C8C;
     margin: 0 auto;
 }
 
+
 #trainform {
     text-align: left;
     margin: 10px 8px 10px 12px;
     height: auto;
-	padding-top:10px;
+    padding-top:10px;
 }
 
 
