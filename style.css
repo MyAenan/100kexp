@@ -81,7 +81,7 @@ border-right:1px solid #8C8C8C;
 	border-bottom-right-radius:15px;	
 }
 
-#howtouse, #aboutpage, #calcuform {
+#howtouse, #aboutpage {
 	text-align: justify; 
 	padding-right:25px; 
 	display:none; 
@@ -134,6 +134,12 @@ border-right:1px solid #8C8C8C;
 	white-space: pre-line;
 }
 
+#calcuform
+{
+    margin-bottom: 25px;
+    height: auto;
+}
+
 #entryform {
     text-align: center;
     margin: 5px auto 20px;
@@ -166,7 +172,6 @@ border-right:1px solid #8C8C8C;
     height: auto;
     padding-top:10px;
 }
-
 
 #trainform > .form-group {
     width: 50%;
