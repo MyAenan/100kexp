@@ -104,10 +104,9 @@ border-right:1px solid #8C8C8C;
     border-left: 1px solid #222;
     text-align: center;
 	background-color: #FFF;
-	/* height:auto; */
-	height: 98vh;
+	height:auto;
 	margin-left: 34%;
-     overflow: auto;
+
 }
 
 #bside .battler {
@@ -232,5 +231,11 @@ border-right:1px solid #8C8C8C;
     position: relative;
   }
   #aside a {}
-  #bside {margin-left: 0;}
+  #bside {
+     margin-left: 0;
+	height: 98vh;
+     overflow: auto;
+}
+	  
+	}
 }
